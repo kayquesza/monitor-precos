@@ -1,5 +1,7 @@
 """Configuracao dos canais de Telegram e dos modelos monitorados."""
 
+import re
+
 # Canais publicos de ofertas monitorados via https://t.me/s/{canal}
 CHANNELS = [
     "escolhasegura",
@@ -59,9 +61,20 @@ PRODUCTS = [
 HISTORY_PATH = "data/historico.json"
 
 
+def _contains_term(text: str, term: str) -> bool:
+    """Verifica se `term` aparece em `text` como palavra/token isolado.
+
+    Usa lookaround em vez de \\b puro para lidar bem com termos que tem
+    caracteres nao-alfanumericos (ex: "s24+"), onde \\b se comporta de forma
+    inconsistente. Sem isso, substring simples faz "fe" bater dentro de
+    "oferta", confundindo S24/S25 com S24 FE/S25 FE.
+    """
+    pattern = r"(?<!\w)" + re.escape(term) + r"(?!\w)"
+    return re.search(pattern, text, flags=re.IGNORECASE) is not None
+
+
 def matches_product(text: str, product: dict) -> bool:
     """Retorna True se o texto contem todos os include_terms e nenhum exclude_terms."""
-    text_lower = text.lower()
-    has_all_includes = all(term.lower() in text_lower for term in product["include_terms"])
-    has_any_exclude = any(term.lower() in text_lower for term in product["exclude_terms"])
+    has_all_includes = all(_contains_term(text, term) for term in product["include_terms"])
+    has_any_exclude = any(_contains_term(text, term) for term in product["exclude_terms"])
     return has_all_includes and not has_any_exclude

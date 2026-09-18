@@ -12,24 +12,40 @@ from typing import Dict
 from zoneinfo import ZoneInfo
 
 from config import CHANNELS, HISTORY_PATH, PRODUCTS, matches_product
-from telegram import send_message
+from telegram import escape_html, send_message
 from telegram_canais import fetch_channel_posts
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 HISTORY_MAX_AGE_DAYS = 30
 
 
-def load_history(path: Path) -> Dict[str, dict]:
+def load_history(path: Path, bot_token: str, chat_id: str) -> Dict[str, dict]:
     if not path.exists():
         return {}
-    with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError as exc:
+        print(f"Historico corrompido em {path}: {exc}", file=sys.stderr)
+        try:
+            send_message(
+                bot_token,
+                chat_id,
+                build_alert_message(
+                    [f"{escape_html(str(path))} esta corrompido ({escape_html(str(exc))}) - reiniciando historico vazio"]
+                ),
+            )
+        except Exception as send_exc:  # noqa: BLE001 - nao deixa a notificacao de alerta derrubar o run
+            print(f"Falha ao enviar alerta de historico corrompido: {send_exc}", file=sys.stderr)
+        return {}
 
 
 def save_history(path: Path, history: Dict[str, dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
+    tmp_path = path.with_name(path.name + ".tmp")
+    with tmp_path.open("w", encoding="utf-8") as f:
         json.dump(history, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, path)
 
 
 def prune_old_history(history: Dict[str, dict], max_age_days: int = HISTORY_MAX_AGE_DAYS) -> Dict[str, dict]:
@@ -64,14 +80,16 @@ def build_match_message(
     excerpt = post_text if len(post_text) <= 500 else post_text[:500] + "..."
     published_str = format_published_at(published_at)
     return (
-        f"\U0001F4F1 <b>{product_name}</b> - possivel oferta em @{channel}\n"
+        f"\U0001F4F1 <b>{escape_html(product_name)}</b> - possivel oferta em @{escape_html(channel)}\n"
         f"\U0001F553 Publicado em: {published_str}\n\n"
-        f"{excerpt}\n\n"
-        f"{post_url}"
+        f"{escape_html(excerpt)}\n\n"
+        f"{escape_html(post_url)}"
     )
 
 
 def build_alert_message(issues: list[str]) -> str:
+    # `issues` ja vem com as partes dinamicas (canal, mensagem de excecao)
+    # escapadas na origem - aqui so montamos o texto fixo ao redor.
     bullet_list = "\n".join(f"- {issue}" for issue in issues)
     return f"⚠️ <b>Alerta do monitor de precos</b>\n\n{bullet_list}"
 
@@ -84,7 +102,7 @@ def main() -> int:
         return 1
 
     history_path = REPO_ROOT / HISTORY_PATH
-    history = load_history(history_path)
+    history = load_history(history_path, bot_token, chat_id)
     channel_issues: list[str] = []
 
     for channel in CHANNELS:
@@ -92,14 +110,14 @@ def main() -> int:
             posts = fetch_channel_posts(channel)
         except Exception as exc:  # noqa: BLE001 - loga e segue para o proximo canal
             print(f"[{channel}] erro ao buscar posts: {exc}", file=sys.stderr)
-            channel_issues.append(f"@{channel}: erro ao buscar posts ({exc})")
+            channel_issues.append(f"@{escape_html(channel)}: erro ao buscar posts ({escape_html(str(exc))})")
             continue
 
         print(f"[{channel}] {len(posts)} posts encontrados na pagina de preview.")
 
         if not posts:
             print(f"[{channel}] nenhum post retornado.", file=sys.stderr)
-            channel_issues.append(f"@{channel}: retornou 0 posts")
+            channel_issues.append(f"@{escape_html(channel)}: retornou 0 posts")
 
         for post in posts:
             for product in PRODUCTS:
@@ -113,7 +131,16 @@ def main() -> int:
                 message = build_match_message(
                     product["name"], channel, post.text, post.url, post.published_at
                 )
-                send_message(bot_token, chat_id, message)
+                try:
+                    send_message(bot_token, chat_id, message)
+                except Exception as exc:  # noqa: BLE001 - loga e segue para o proximo post
+                    print(
+                        f"[{channel}] erro ao notificar {product['name']} ({post.post_id}): {exc}",
+                        file=sys.stderr,
+                    )
+                    # nao marca como notificado - tenta de novo na proxima execucao
+                    continue
+
                 print(f"[{channel}] notificado: {product['name']} ({post.post_id})")
 
                 history[history_key] = {
@@ -126,8 +153,11 @@ def main() -> int:
                 }
 
     if channel_issues:
-        send_message(bot_token, chat_id, build_alert_message(channel_issues))
-        print(f"Alerta enviado para {len(channel_issues)} canal(is) com problema.", file=sys.stderr)
+        try:
+            send_message(bot_token, chat_id, build_alert_message(channel_issues))
+            print(f"Alerta enviado para {len(channel_issues)} canal(is) com problema.", file=sys.stderr)
+        except Exception as exc:  # noqa: BLE001 - nao deixa isso impedir o save_history abaixo
+            print(f"Erro ao enviar alerta de canais com problema: {exc}", file=sys.stderr)
 
     history = prune_old_history(history)
     save_history(history_path, history)
