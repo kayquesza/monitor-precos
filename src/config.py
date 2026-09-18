@@ -5,6 +5,9 @@ CHANNELS = [
     "escolhasegura",
     "ctofertascelulares",
     "Fraguas84Oficial",
+    "pelandobr",
+    "cupons_desconto",
+    "BenchPromos",
 ]
 
 # Cada produto e definido por termos que precisam aparecer no texto do post
@@ -36,6 +39,19 @@ PRODUCTS = [
         "name": "Samsung Galaxy S25",
         "include_terms": ["s25"],
         "exclude_terms": ["fe", "ultra", "s25+", "plus"],
+    },
+    {
+        "name": "MacBook",
+        "include_terms": ["macbook"],
+        "exclude_terms": [
+            "capa",
+            "case",
+            "pelicula",
+            "película",
+            "suporte",
+            "reembalado",
+            "seminovo",
+        ],
     },
 ]
 

@@ -29,6 +29,7 @@ class Post:
     post_id: str  # ex: "escolhasegura/22842" (data-post do Telegram, unico por canal)
     text: str
     url: str
+    published_at: str | None  # ISO 8601 (ex: "2026-09-18T14:12:02+00:00"), do atributo datetime da <time>
 
 
 def fetch_channel_posts(channel: str) -> List[Post]:
@@ -48,12 +49,17 @@ def fetch_channel_posts(channel: str) -> List[Post]:
             continue  # post sem texto (ex: apenas foto/video) - nada para filtrar
 
         text = text_div.get_text(separator="\n", strip=True)
+
+        time_tag = message_div.select_one("time[datetime]")
+        published_at = time_tag["datetime"] if time_tag else None
+
         posts.append(
             Post(
                 channel=channel,
                 post_id=post_id,
                 text=text,
                 url=f"https://t.me/{post_id}",
+                published_at=published_at,
             )
         )
 
