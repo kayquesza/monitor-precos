@@ -1,8 +1,8 @@
-# Monitor de Precos - Mercado Livre
+# Monitor de Precos - Canais de Ofertas no Telegram
 
-Monitora o preco de celulares no Mercado Livre e envia uma notificacao no
-Telegram sempre que o menor preco encontrado cair em relacao a ultima
-execucao.
+Monitora canais publicos de ofertas no Telegram e notifica (tambem via
+Telegram) sempre que aparecer um post novo mencionando um dos celulares
+configurados.
 
 ## Produtos monitorados
 
@@ -12,19 +12,32 @@ execucao.
 - Samsung Galaxy S24
 - Samsung Galaxy S25
 
-A lista fica em `src/config.py` (lista `PRODUCTS`) e pode ser editada
-livremente.
+A lista, com os termos obrigatorios/exclusao usados para casar cada modelo no
+texto dos posts, fica em `src/config.py` (lista `PRODUCTS`) e pode ser
+editada livremente.
+
+## Canais monitorados
+
+- [@escolhasegura](https://t.me/escolhasegura)
+- [@ctofertascelulares](https://t.me/ctofertascelulares)
+- [@Fraguas84Oficial](https://t.me/Fraguas84Oficial)
+
+A lista fica em `src/config.py` (lista `CHANNELS`).
 
 ## Como funciona
 
-1. `src/mercado_livre.py` consulta a API publica de busca do Mercado Livre
-   (`https://api.mercadolibre.com/sites/MLB/search`) para cada produto e pega
-   o anuncio de menor preco entre os resultados.
-2. `src/monitor.py` compara o preco atual com o preco salvo em
-   `data/price_history.json` na execucao anterior.
-3. Se o preco caiu, `src/telegram.py` envia uma mensagem para o chat
-   configurado via Telegram Bot API.
-4. O historico e atualizado em `data/price_history.json`.
+1. `src/telegram_canais.py` busca a pagina de preview publica de cada canal
+   (`https://t.me/s/{canal}`) - a mesma usada para embutir posts em sites
+   externos, que nao exige login nem token - e extrai o texto e o ID unico de
+   cada post.
+2. `src/config.py` define, para cada modelo, quais termos precisam aparecer
+   no texto (`include_terms`) e quais termos descartam o post
+   (`exclude_terms`, para nao confundir por exemplo "S24" com "S24 FE").
+3. `src/monitor.py` filtra os posts de cada canal pelos modelos configurados
+   e compara com `data/historico.json`, que guarda os posts ja notificados
+   (chave `"{canal}/{id_do_post}"::"{nome_do_modelo}"`).
+4. Para cada post novo que der match, `src/telegram.py` envia uma mensagem
+   com o texto do post e o link direto para ele no chat configurado.
 
 ## Configuracao
 
@@ -62,9 +75,8 @@ python src/monitor.py
 
 ## Automacao (GitHub Actions)
 
-O workflow `.github/workflows/monitor.yml` roda nos minutos `:07` e `:44` de
-cada hora (`cron: "7,44 * * * *"`), evitando os horarios de pico (`:00`/`:30`)
-da fila do GitHub Actions, e tambem pode ser disparado manualmente pela aba
+O workflow `.github/workflows/monitor.yml` roda a cada 15 minutos
+(`cron: "*/15 * * * *"`) e tambem pode ser disparado manualmente pela aba
 Actions (`workflow_dispatch`). Apos cada execucao, o arquivo
-`data/price_history.json` e commitado de volta no repositorio para manter o
-historico entre execucoes.
+`data/historico.json` e commitado de volta no repositorio para manter o
+historico de posts ja notificados entre execucoes.

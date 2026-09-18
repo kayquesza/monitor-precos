@@ -1,16 +1,18 @@
-"""Monitora precos de celulares no Mercado Livre e notifica quedas via Telegram."""
+"""Monitora canais publicos do Telegram em busca de ofertas dos modelos
+configurados e notifica (no Telegram) cada post novo que der match."""
 
 from __future__ import annotations
 
 import json
 import os
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict
 
-from config import PRICE_HISTORY_PATH, PRODUCTS, SEARCH_LIMIT, SITE_ID
-from mercado_livre import find_cheapest_listing
+from config import CHANNELS, HISTORY_PATH, PRODUCTS, matches_product
 from telegram import send_message
+from telegram_canais import fetch_channel_posts
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
@@ -28,12 +30,12 @@ def save_history(path: Path, history: Dict[str, dict]) -> None:
         json.dump(history, f, ensure_ascii=False, indent=2)
 
 
-def build_drop_message(product_name: str, old_price: float, new_price: float, permalink: str) -> str:
-    discount = 100 * (old_price - new_price) / old_price
+def build_match_message(product_name: str, channel: str, post_text: str, post_url: str) -> str:
+    excerpt = post_text if len(post_text) <= 500 else post_text[:500] + "..."
     return (
-        f"\U0001F4C9 <b>Queda de preco: {product_name}</b>\n"
-        f"De R$ {old_price:.2f} para R$ {new_price:.2f} (-{discount:.1f}%)\n"
-        f"{permalink}"
+        f"\U0001F4F1 <b>{product_name}</b> - possivel oferta em @{channel}\n\n"
+        f"{excerpt}\n\n"
+        f"{post_url}"
     )
 
 
@@ -44,36 +46,38 @@ def main() -> int:
         print("TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID precisam estar definidos.", file=sys.stderr)
         return 1
 
-    history_path = REPO_ROOT / PRICE_HISTORY_PATH
+    history_path = REPO_ROOT / HISTORY_PATH
     history = load_history(history_path)
 
-    for product in PRODUCTS:
-        name = product["name"]
-        query = product["query"]
-
+    for channel in CHANNELS:
         try:
-            listing = find_cheapest_listing(query, site_id=SITE_ID, limit=SEARCH_LIMIT)
-        except Exception as exc:  # noqa: BLE001 - loga e segue para o proximo produto
-            print(f"[{name}] erro ao consultar Mercado Livre: {exc}", file=sys.stderr)
+            posts = fetch_channel_posts(channel)
+        except Exception as exc:  # noqa: BLE001 - loga e segue para o proximo canal
+            print(f"[{channel}] erro ao buscar posts: {exc}", file=sys.stderr)
             continue
 
-        if listing is None:
-            print(f"[{name}] nenhum anuncio encontrado para a busca '{query}'.")
-            continue
+        print(f"[{channel}] {len(posts)} posts encontrados na pagina de preview.")
 
-        previous = history.get(name)
-        print(f"[{name}] menor preco atual: R$ {listing.price:.2f} ({listing.permalink})")
+        for post in posts:
+            for product in PRODUCTS:
+                if not matches_product(post.text, product):
+                    continue
 
-        if previous is not None and listing.price < previous["price"]:
-            message = build_drop_message(name, previous["price"], listing.price, listing.permalink)
-            send_message(bot_token, chat_id, message)
-            print(f"[{name}] notificacao enviada: queda de preco detectada.")
+                history_key = f"{post.post_id}::{product['name']}"
+                if history_key in history:
+                    continue
 
-        history[name] = {
-            "price": listing.price,
-            "title": listing.title,
-            "permalink": listing.permalink,
-        }
+                message = build_match_message(product["name"], channel, post.text, post.url)
+                send_message(bot_token, chat_id, message)
+                print(f"[{channel}] notificado: {product['name']} ({post.post_id})")
+
+                history[history_key] = {
+                    "channel": channel,
+                    "post_id": post.post_id,
+                    "product": product["name"],
+                    "url": post.url,
+                    "notified_at": datetime.now(timezone.utc).isoformat(),
+                }
 
     save_history(history_path, history)
     return 0
