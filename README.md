@@ -9,18 +9,26 @@ configurados.
 - Samsung Galaxy S24 FE
 - Samsung Galaxy S25 FE
 - Samsung Galaxy A57
+- Samsung Galaxy S23
 - Samsung Galaxy S24
 - Samsung Galaxy S25
+- Samsung Galaxy S24+
+- Samsung Galaxy S25+
+- MacBook
 
 A lista, com os termos obrigatorios/exclusao usados para casar cada modelo no
-texto dos posts, fica em `src/config.py` (lista `PRODUCTS`) e pode ser
-editada livremente.
+texto dos posts (incluindo exclusao de acessorios como capa/capinha/pelicula
+e de aparelhos reembalados/seminovos), fica em `src/config.py` (lista
+`PRODUCTS`) e pode ser editada livremente.
 
 ## Canais monitorados
 
 - [@escolhasegura](https://t.me/escolhasegura)
 - [@ctofertascelulares](https://t.me/ctofertascelulares)
 - [@Fraguas84Oficial](https://t.me/Fraguas84Oficial)
+- [@pelandobr](https://t.me/pelandobr)
+- [@cupons_desconto](https://t.me/cupons_desconto)
+- [@BenchPromos](https://t.me/BenchPromos)
 
 A lista fica em `src/config.py` (lista `CHANNELS`).
 
@@ -37,7 +45,10 @@ A lista fica em `src/config.py` (lista `CHANNELS`).
    e compara com `data/historico.json`, que guarda os posts ja notificados
    (chave `"{canal}/{id_do_post}"::"{nome_do_modelo}"`).
 4. Para cada post novo que der match, `src/telegram.py` envia uma mensagem
-   com o texto do post e o link direto para ele no chat configurado.
+   com o texto do post, a data/hora de publicacao (extraida da pagina) e o
+   link direto para ele no chat configurado.
+5. Se algum canal falhar ao buscar ou retornar 0 posts, um alerta separado
+   e enviado avisando qual canal deu problema.
 
 ## Configuracao
 
