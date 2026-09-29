@@ -258,5 +258,21 @@
     "url": "https://t.me/ctofertascelulares/32159",
     "published_at": "2026-09-28T12:36:10+00:00",
     "notified_at": "2026-09-28T17:16:05.121177+00:00"
+  },
+  "ctofertascelulares/32168::Samsung Galaxy A57": {
+    "channel": "ctofertascelulares",
+    "post_id": "ctofertascelulares/32168",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/ctofertascelulares/32168",
+    "published_at": "2026-09-29T12:15:14+00:00",
+    "notified_at": "2026-09-29T15:13:22.319048+00:00"
+  },
+  "BenchPromos/26527::MacBook": {
+    "channel": "BenchPromos",
+    "post_id": "BenchPromos/26527",
+    "product": "MacBook",
+    "url": "https://t.me/BenchPromos/26527",
+    "published_at": "2026-09-29T14:19:08+00:00",
+    "notified_at": "2026-09-29T15:13:25.229630+00:00"
   }
 }
