@@ -314,5 +314,29 @@
     "url": "https://t.me/escolhasegura/23301",
     "published_at": "2026-09-30T17:18:01+00:00",
     "notified_at": "2026-09-30T20:12:00.706204+00:00"
+  },
+  "escolhasegura/23346::MacBook": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/23346",
+    "product": "MacBook",
+    "url": "https://t.me/escolhasegura/23346",
+    "published_at": "2026-10-01T15:29:11+00:00",
+    "notified_at": "2026-10-01T17:00:48.887523+00:00"
+  },
+  "escolhasegura/23350::Samsung Galaxy A57": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/23350",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/escolhasegura/23350",
+    "published_at": "2026-10-01T16:27:01+00:00",
+    "notified_at": "2026-10-01T17:00:49.319683+00:00"
+  },
+  "ctofertascelulares/32182::Samsung Galaxy A57": {
+    "channel": "ctofertascelulares",
+    "post_id": "ctofertascelulares/32182",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/ctofertascelulares/32182",
+    "published_at": "2026-10-01T11:51:11+00:00",
+    "notified_at": "2026-10-01T17:00:50.269410+00:00"
   }
 }
