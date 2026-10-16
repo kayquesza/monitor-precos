@@ -666,5 +666,21 @@
     "url": "https://t.me/escolhasegura/24045",
     "published_at": "2026-10-15T20:45:19+00:00",
     "notified_at": "2026-10-15T21:51:59.784417+00:00"
+  },
+  "escolhasegura/24092::Samsung Galaxy S25+": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/24092",
+    "product": "Samsung Galaxy S25+",
+    "url": "https://t.me/escolhasegura/24092",
+    "published_at": "2026-10-16T17:45:21+00:00",
+    "notified_at": "2026-10-16T19:59:51.158050+00:00"
+  },
+  "escolhasegura/24098::MacBook": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/24098",
+    "product": "MacBook",
+    "url": "https://t.me/escolhasegura/24098",
+    "published_at": "2026-10-16T18:25:53+00:00",
+    "notified_at": "2026-10-16T19:59:51.588838+00:00"
   }
 }
