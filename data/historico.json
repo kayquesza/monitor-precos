@@ -1,12 +1,4 @@
 {
-  "Fraguas84Oficial/37213::Samsung Galaxy A57": {
-    "channel": "Fraguas84Oficial",
-    "post_id": "Fraguas84Oficial/37213",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/Fraguas84Oficial/37213",
-    "published_at": "2026-09-21T12:28:08+00:00",
-    "notified_at": "2026-09-21T13:04:33.383544+00:00"
-  },
   "escolhasegura/22929::Samsung Galaxy S25": {
     "channel": "escolhasegura",
     "post_id": "escolhasegura/22929",
@@ -782,5 +774,13 @@
     "url": "https://t.me/escolhasegura/24227",
     "published_at": "2026-10-20T18:25:01+00:00",
     "notified_at": "2026-10-20T20:16:23.037802+00:00"
+  },
+  "cupons_desconto/83941::Samsung Galaxy A57": {
+    "channel": "cupons_desconto",
+    "post_id": "cupons_desconto/83941",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/cupons_desconto/83941",
+    "published_at": "2026-10-21T14:40:24+00:00",
+    "notified_at": "2026-10-21T17:38:23.827267+00:00"
   }
 }
