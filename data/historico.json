@@ -1,28 +1,4 @@
 {
-  "ctofertascelulares/32126::Samsung Galaxy A57": {
-    "channel": "ctofertascelulares",
-    "post_id": "ctofertascelulares/32126",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/ctofertascelulares/32126",
-    "published_at": "2026-09-22T11:36:10+00:00",
-    "notified_at": "2026-09-22T15:04:25.121603+00:00"
-  },
-  "ctofertascelulares/32127::Samsung Galaxy A57": {
-    "channel": "ctofertascelulares",
-    "post_id": "ctofertascelulares/32127",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/ctofertascelulares/32127",
-    "published_at": "2026-09-22T12:00:16+00:00",
-    "notified_at": "2026-09-22T15:04:25.717153+00:00"
-  },
-  "cupons_desconto/83199::Samsung Galaxy A57": {
-    "channel": "cupons_desconto",
-    "post_id": "cupons_desconto/83199",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/cupons_desconto/83199",
-    "published_at": "2026-09-22T11:57:07+00:00",
-    "notified_at": "2026-09-22T15:04:27.996694+00:00"
-  },
   "escolhasegura/22981::Samsung Galaxy A57": {
     "channel": "escolhasegura",
     "post_id": "escolhasegura/22981",
@@ -766,5 +742,29 @@
     "url": "https://t.me/pelandobr/98201",
     "published_at": "2026-10-21T20:24:07+00:00",
     "notified_at": "2026-10-21T20:52:52.468220+00:00"
+  },
+  "escolhasegura/24307::Samsung Galaxy A57": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/24307",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/escolhasegura/24307",
+    "published_at": "2026-10-22T14:27:28+00:00",
+    "notified_at": "2026-10-22T18:04:00.645880+00:00"
+  },
+  "escolhasegura/24309::Samsung Galaxy S25": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/24309",
+    "product": "Samsung Galaxy S25",
+    "url": "https://t.me/escolhasegura/24309",
+    "published_at": "2026-10-22T14:34:01+00:00",
+    "notified_at": "2026-10-22T18:04:01.096556+00:00"
+  },
+  "ctofertascelulares/32309::Samsung Galaxy A57": {
+    "channel": "ctofertascelulares",
+    "post_id": "ctofertascelulares/32309",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/ctofertascelulares/32309",
+    "published_at": "2026-10-22T13:48:15+00:00",
+    "notified_at": "2026-10-22T18:04:01.991000+00:00"
   }
 }
