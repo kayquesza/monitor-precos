@@ -1,12 +1,4 @@
 {
-  "BenchPromos/26336::MacBook": {
-    "channel": "BenchPromos",
-    "post_id": "BenchPromos/26336",
-    "product": "MacBook",
-    "url": "https://t.me/BenchPromos/26336",
-    "published_at": "2026-09-23T16:56:58+00:00",
-    "notified_at": "2026-09-23T17:50:41.160042+00:00"
-  },
   "ctofertascelulares/32139::Samsung Galaxy A57": {
     "channel": "ctofertascelulares",
     "post_id": "ctofertascelulares/32139",
@@ -718,5 +710,13 @@
     "url": "https://t.me/ctofertascelulares/32320",
     "published_at": "2026-10-23T12:33:12+00:00",
     "notified_at": "2026-10-23T14:25:35.041131+00:00"
+  },
+  "pelandobr/98431::Samsung Galaxy S25 FE": {
+    "channel": "pelandobr",
+    "post_id": "pelandobr/98431",
+    "product": "Samsung Galaxy S25 FE",
+    "url": "https://t.me/pelandobr/98431",
+    "published_at": "2026-10-23T17:48:05+00:00",
+    "notified_at": "2026-10-23T18:32:46.023573+00:00"
   }
 }
