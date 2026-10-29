@@ -1,20 +1,4 @@
 {
-  "ctofertascelulares/32168::Samsung Galaxy A57": {
-    "channel": "ctofertascelulares",
-    "post_id": "ctofertascelulares/32168",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/ctofertascelulares/32168",
-    "published_at": "2026-09-29T12:15:14+00:00",
-    "notified_at": "2026-09-29T15:13:22.319048+00:00"
-  },
-  "BenchPromos/26527::MacBook": {
-    "channel": "BenchPromos",
-    "post_id": "BenchPromos/26527",
-    "product": "MacBook",
-    "url": "https://t.me/BenchPromos/26527",
-    "published_at": "2026-09-29T14:19:08+00:00",
-    "notified_at": "2026-09-29T15:13:25.229630+00:00"
-  },
   "escolhasegura/23254::Samsung Galaxy S25": {
     "channel": "escolhasegura",
     "post_id": "escolhasegura/23254",
@@ -670,5 +654,13 @@
     "url": "https://t.me/BenchPromos/27589",
     "published_at": "2026-10-29T03:32:31+00:00",
     "notified_at": "2026-10-29T09:05:27.866940+00:00"
+  },
+  "pelandobr/99129::Samsung Galaxy A57": {
+    "channel": "pelandobr",
+    "post_id": "pelandobr/99129",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/pelandobr/99129",
+    "published_at": "2026-10-29T13:36:06+00:00",
+    "notified_at": "2026-10-29T16:03:49.219781+00:00"
   }
 }
