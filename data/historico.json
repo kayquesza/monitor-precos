@@ -1,12 +1,4 @@
 {
-  "escolhasegura/23301::MacBook": {
-    "channel": "escolhasegura",
-    "post_id": "escolhasegura/23301",
-    "product": "MacBook",
-    "url": "https://t.me/escolhasegura/23301",
-    "published_at": "2026-09-30T17:18:01+00:00",
-    "notified_at": "2026-09-30T20:12:00.706204+00:00"
-  },
   "escolhasegura/23346::MacBook": {
     "channel": "escolhasegura",
     "post_id": "escolhasegura/23346",
@@ -662,5 +654,13 @@
     "url": "https://t.me/BenchPromos/27639",
     "published_at": "2026-10-30T13:49:17+00:00",
     "notified_at": "2026-10-30T18:51:08.535025+00:00"
+  },
+  "cupons_desconto/84170::Samsung Galaxy S25+": {
+    "channel": "cupons_desconto",
+    "post_id": "cupons_desconto/84170",
+    "product": "Samsung Galaxy S25+",
+    "url": "https://t.me/cupons_desconto/84170",
+    "published_at": "2026-10-30T22:40:19+00:00",
+    "notified_at": "2026-10-30T22:43:08.313404+00:00"
   }
 }
