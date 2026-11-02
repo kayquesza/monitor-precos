@@ -1,12 +1,4 @@
 {
-  "escolhasegura/23439::MacBook": {
-    "channel": "escolhasegura",
-    "post_id": "escolhasegura/23439",
-    "product": "MacBook",
-    "url": "https://t.me/escolhasegura/23439",
-    "published_at": "2026-10-03T16:02:20+00:00",
-    "notified_at": "2026-10-03T16:14:41.393274+00:00"
-  },
   "Fraguas84Oficial/37886::Samsung Galaxy A57": {
     "channel": "Fraguas84Oficial",
     "post_id": "Fraguas84Oficial/37886",
@@ -638,5 +630,13 @@
     "url": "https://t.me/pelandobr/99494",
     "published_at": "2026-11-01T16:48:04+00:00",
     "notified_at": "2026-11-01T18:39:56.496838+00:00"
+  },
+  "pelandobr/99620::MacBook": {
+    "channel": "pelandobr",
+    "post_id": "pelandobr/99620",
+    "product": "MacBook",
+    "url": "https://t.me/pelandobr/99620",
+    "published_at": "2026-11-02T17:00:09+00:00",
+    "notified_at": "2026-11-02T18:36:58.006556+00:00"
   }
 }
