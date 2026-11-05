@@ -1,12 +1,4 @@
 {
-  "cupons_desconto/83570::Samsung Galaxy S25+": {
-    "channel": "cupons_desconto",
-    "post_id": "cupons_desconto/83570",
-    "product": "Samsung Galaxy S25+",
-    "url": "https://t.me/cupons_desconto/83570",
-    "published_at": "2026-10-06T18:00:20+00:00",
-    "notified_at": "2026-10-06T21:04:55.565685+00:00"
-  },
   "escolhasegura/23668::Samsung Galaxy A57": {
     "channel": "escolhasegura",
     "post_id": "escolhasegura/23668",
@@ -654,5 +646,29 @@
     "url": "https://t.me/ctofertascelulares/32389",
     "published_at": "2026-11-04T14:12:11+00:00",
     "notified_at": "2026-11-04T15:59:22.780714+00:00"
+  },
+  "ctofertascelulares/32395::Samsung Galaxy A57": {
+    "channel": "ctofertascelulares",
+    "post_id": "ctofertascelulares/32395",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/ctofertascelulares/32395",
+    "published_at": "2026-11-05T17:30:15+00:00",
+    "notified_at": "2026-11-05T22:27:06.957476+00:00"
+  },
+  "pelandobr/100064::Samsung Galaxy A57": {
+    "channel": "pelandobr",
+    "post_id": "pelandobr/100064",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/pelandobr/100064",
+    "published_at": "2026-11-05T20:30:08+00:00",
+    "notified_at": "2026-11-05T22:27:08.493208+00:00"
+  },
+  "BenchPromos/27904::Samsung Galaxy A57": {
+    "channel": "BenchPromos",
+    "post_id": "BenchPromos/27904",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/BenchPromos/27904",
+    "published_at": "2026-11-05T20:17:55+00:00",
+    "notified_at": "2026-11-05T22:27:10.096257+00:00"
   }
 }
