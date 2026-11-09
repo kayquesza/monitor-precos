@@ -1,60 +1,4 @@
 {
-  "pelandobr/97077::Samsung Galaxy S25+": {
-    "channel": "pelandobr",
-    "post_id": "pelandobr/97077",
-    "product": "Samsung Galaxy S25+",
-    "url": "https://t.me/pelandobr/97077",
-    "published_at": "2026-10-10T12:48:06+00:00",
-    "notified_at": "2026-10-10T13:02:26.790076+00:00"
-  },
-  "cupons_desconto/83675::Samsung Galaxy A57": {
-    "channel": "cupons_desconto",
-    "post_id": "cupons_desconto/83675",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/cupons_desconto/83675",
-    "published_at": "2026-10-10T11:44:07+00:00",
-    "notified_at": "2026-10-10T13:02:27.812034+00:00"
-  },
-  "escolhasegura/23838::Samsung Galaxy A57": {
-    "channel": "escolhasegura",
-    "post_id": "escolhasegura/23838",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/escolhasegura/23838",
-    "published_at": "2026-10-10T17:48:20+00:00",
-    "notified_at": "2026-10-10T17:49:42.139084+00:00"
-  },
-  "ctofertascelulares/32244::Samsung Galaxy A57": {
-    "channel": "ctofertascelulares",
-    "post_id": "ctofertascelulares/32244",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/ctofertascelulares/32244",
-    "published_at": "2026-10-10T15:39:13+00:00",
-    "notified_at": "2026-10-10T17:49:43.025901+00:00"
-  },
-  "Fraguas84Oficial/39050::Samsung Galaxy S25+": {
-    "channel": "Fraguas84Oficial",
-    "post_id": "Fraguas84Oficial/39050",
-    "product": "Samsung Galaxy S25+",
-    "url": "https://t.me/Fraguas84Oficial/39050",
-    "published_at": "2026-10-10T16:36:54+00:00",
-    "notified_at": "2026-10-10T17:49:43.896121+00:00"
-  },
-  "pelandobr/97114::Samsung Galaxy S25+": {
-    "channel": "pelandobr",
-    "post_id": "pelandobr/97114",
-    "product": "Samsung Galaxy S25+",
-    "url": "https://t.me/pelandobr/97114",
-    "published_at": "2026-10-10T16:36:04+00:00",
-    "notified_at": "2026-10-10T17:49:44.774642+00:00"
-  },
-  "escolhasegura/23851::Samsung Galaxy S25 FE": {
-    "channel": "escolhasegura",
-    "post_id": "escolhasegura/23851",
-    "product": "Samsung Galaxy S25 FE",
-    "url": "https://t.me/escolhasegura/23851",
-    "published_at": "2026-10-10T19:35:25+00:00",
-    "notified_at": "2026-10-10T20:52:17.721044+00:00"
-  },
   "pelandobr/97169::Samsung Galaxy A57": {
     "channel": "pelandobr",
     "post_id": "pelandobr/97169",
@@ -606,5 +550,21 @@
     "url": "https://t.me/escolhasegura/24935",
     "published_at": "2026-11-08T21:41:00+00:00",
     "notified_at": "2026-11-08T23:16:32.787377+00:00"
+  },
+  "escolhasegura/24980::Samsung Galaxy S25 FE": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/24980",
+    "product": "Samsung Galaxy S25 FE",
+    "url": "https://t.me/escolhasegura/24980",
+    "published_at": "2026-11-09T20:03:42+00:00",
+    "notified_at": "2026-11-09T21:03:35.061437+00:00"
+  },
+  "pelandobr/100599::Samsung Galaxy S25+": {
+    "channel": "pelandobr",
+    "post_id": "pelandobr/100599",
+    "product": "Samsung Galaxy S25+",
+    "url": "https://t.me/pelandobr/100599",
+    "published_at": "2026-11-09T19:12:06+00:00",
+    "notified_at": "2026-11-09T21:03:37.240011+00:00"
   }
 }
