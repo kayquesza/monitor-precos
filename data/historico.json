@@ -1,12 +1,4 @@
 {
-  "Fraguas84Oficial/39252::Samsung Galaxy A57": {
-    "channel": "Fraguas84Oficial",
-    "post_id": "Fraguas84Oficial/39252",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/Fraguas84Oficial/39252",
-    "published_at": "2026-10-12T03:12:18+00:00",
-    "notified_at": "2026-10-12T03:15:05.697542+00:00"
-  },
   "escolhasegura/23876::Samsung Galaxy A57": {
     "channel": "escolhasegura",
     "post_id": "escolhasegura/23876",
@@ -566,5 +558,21 @@
     "url": "https://t.me/ctofertascelulares/32424",
     "published_at": "2026-11-10T19:33:11+00:00",
     "notified_at": "2026-11-10T23:49:12.329174+00:00"
+  },
+  "escolhasegura/25053::MacBook": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/25053",
+    "product": "MacBook",
+    "url": "https://t.me/escolhasegura/25053",
+    "published_at": "2026-11-11T03:17:00+00:00",
+    "notified_at": "2026-11-11T03:43:46.106020+00:00"
+  },
+  "BenchPromos/28276::MacBook": {
+    "channel": "BenchPromos",
+    "post_id": "BenchPromos/28276",
+    "product": "MacBook",
+    "url": "https://t.me/BenchPromos/28276",
+    "published_at": "2026-11-11T03:15:06+00:00",
+    "notified_at": "2026-11-11T03:43:49.516955+00:00"
   }
 }
