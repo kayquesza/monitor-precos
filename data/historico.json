@@ -1,44 +1,4 @@
 {
-  "escolhasegura/23876::Samsung Galaxy A57": {
-    "channel": "escolhasegura",
-    "post_id": "escolhasegura/23876",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/escolhasegura/23876",
-    "published_at": "2026-10-12T19:04:00+00:00",
-    "notified_at": "2026-10-12T20:03:01.513485+00:00"
-  },
-  "ctofertascelulares/32253::Samsung Galaxy A57": {
-    "channel": "ctofertascelulares",
-    "post_id": "ctofertascelulares/32253",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/ctofertascelulares/32253",
-    "published_at": "2026-10-12T12:12:10+00:00",
-    "notified_at": "2026-10-12T20:03:02.492925+00:00"
-  },
-  "ctofertascelulares/32258::Samsung Galaxy A57": {
-    "channel": "ctofertascelulares",
-    "post_id": "ctofertascelulares/32258",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/ctofertascelulares/32258",
-    "published_at": "2026-10-12T15:18:11+00:00",
-    "notified_at": "2026-10-12T20:03:02.976136+00:00"
-  },
-  "Fraguas84Oficial/39348::Samsung Galaxy A57": {
-    "channel": "Fraguas84Oficial",
-    "post_id": "Fraguas84Oficial/39348",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/Fraguas84Oficial/39348",
-    "published_at": "2026-10-12T19:38:16+00:00",
-    "notified_at": "2026-10-12T20:03:03.981740+00:00"
-  },
-  "cupons_desconto/83743::Samsung Galaxy A57": {
-    "channel": "cupons_desconto",
-    "post_id": "cupons_desconto/83743",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/cupons_desconto/83743",
-    "published_at": "2026-10-12T20:00:19+00:00",
-    "notified_at": "2026-10-12T20:03:05.594098+00:00"
-  },
   "ctofertascelulares/32261::Samsung Galaxy A57": {
     "channel": "ctofertascelulares",
     "post_id": "ctofertascelulares/32261",
@@ -614,5 +574,45 @@
     "url": "https://t.me/pelandobr/100912",
     "published_at": "2026-11-11T17:12:07+00:00",
     "notified_at": "2026-11-11T18:49:01.154457+00:00"
+  },
+  "escolhasegura/25153::Samsung Galaxy A57": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/25153",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/escolhasegura/25153",
+    "published_at": "2026-11-11T22:59:32+00:00",
+    "notified_at": "2026-11-12T01:08:32.527799+00:00"
+  },
+  "ctofertascelulares/32459::Samsung Galaxy A57": {
+    "channel": "ctofertascelulares",
+    "post_id": "ctofertascelulares/32459",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/ctofertascelulares/32459",
+    "published_at": "2026-11-11T23:45:13+00:00",
+    "notified_at": "2026-11-12T01:08:33.506796+00:00"
+  },
+  "Fraguas84Oficial/46359::Samsung Galaxy A57": {
+    "channel": "Fraguas84Oficial",
+    "post_id": "Fraguas84Oficial/46359",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/Fraguas84Oficial/46359",
+    "published_at": "2026-11-12T00:48:58+00:00",
+    "notified_at": "2026-11-12T01:08:34.354878+00:00"
+  },
+  "pelandobr/100971::Samsung Galaxy A57": {
+    "channel": "pelandobr",
+    "post_id": "pelandobr/100971",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/pelandobr/100971",
+    "published_at": "2026-11-11T23:06:06+00:00",
+    "notified_at": "2026-11-12T01:08:35.188920+00:00"
+  },
+  "BenchPromos/28454::Samsung Galaxy S25": {
+    "channel": "BenchPromos",
+    "post_id": "BenchPromos/28454",
+    "product": "Samsung Galaxy S25",
+    "url": "https://t.me/BenchPromos/28454",
+    "published_at": "2026-11-11T22:53:25+00:00",
+    "notified_at": "2026-11-12T01:08:36.483664+00:00"
   }
 }
