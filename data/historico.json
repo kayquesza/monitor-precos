@@ -1,12 +1,4 @@
 {
-  "Fraguas84Oficial/39804::Samsung Galaxy A57": {
-    "channel": "Fraguas84Oficial",
-    "post_id": "Fraguas84Oficial/39804",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/Fraguas84Oficial/39804",
-    "published_at": "2026-10-14T18:51:34+00:00",
-    "notified_at": "2026-10-14T19:32:01.828995+00:00"
-  },
   "Fraguas84Oficial/40045::Samsung Galaxy S25": {
     "channel": "Fraguas84Oficial",
     "post_id": "Fraguas84Oficial/40045",
@@ -590,5 +582,21 @@
     "url": "https://t.me/ctofertascelulares/32474",
     "published_at": "2026-11-13T13:54:12+00:00",
     "notified_at": "2026-11-13T17:55:47.834348+00:00"
+  },
+  "Fraguas84Oficial/46645::Samsung Galaxy S25 FE": {
+    "channel": "Fraguas84Oficial",
+    "post_id": "Fraguas84Oficial/46645",
+    "product": "Samsung Galaxy S25 FE",
+    "url": "https://t.me/Fraguas84Oficial/46645",
+    "published_at": "2026-11-13T22:45:55+00:00",
+    "notified_at": "2026-11-13T23:02:30.083742+00:00"
+  },
+  "cupons_desconto/84525::Samsung Galaxy S25": {
+    "channel": "cupons_desconto",
+    "post_id": "cupons_desconto/84525",
+    "product": "Samsung Galaxy S25",
+    "url": "https://t.me/cupons_desconto/84525",
+    "published_at": "2026-11-13T18:40:20+00:00",
+    "notified_at": "2026-11-13T23:02:31.958690+00:00"
   }
 }
