@@ -1,12 +1,4 @@
 {
-  "Fraguas84Oficial/40045::Samsung Galaxy S25": {
-    "channel": "Fraguas84Oficial",
-    "post_id": "Fraguas84Oficial/40045",
-    "product": "Samsung Galaxy S25",
-    "url": "https://t.me/Fraguas84Oficial/40045",
-    "published_at": "2026-10-15T18:15:28+00:00",
-    "notified_at": "2026-10-15T18:52:44.475300+00:00"
-  },
   "escolhasegura/24045::MacBook": {
     "channel": "escolhasegura",
     "post_id": "escolhasegura/24045",
@@ -622,5 +614,13 @@
     "url": "https://t.me/ctofertascelulares/32480",
     "published_at": "2026-11-14T14:00:15+00:00",
     "notified_at": "2026-11-14T16:39:08.233394+00:00"
+  },
+  "pelandobr/101404::MacBook": {
+    "channel": "pelandobr",
+    "post_id": "pelandobr/101404",
+    "product": "MacBook",
+    "url": "https://t.me/pelandobr/101404",
+    "published_at": "2026-11-14T20:24:06+00:00",
+    "notified_at": "2026-11-14T20:55:17.861699+00:00"
   }
 }
