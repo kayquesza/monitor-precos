@@ -1,28 +1,4 @@
 {
-  "escolhasegura/24132::Samsung Galaxy A57": {
-    "channel": "escolhasegura",
-    "post_id": "escolhasegura/24132",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/escolhasegura/24132",
-    "published_at": "2026-10-17T16:13:01+00:00",
-    "notified_at": "2026-10-17T16:22:44.247702+00:00"
-  },
-  "Fraguas84Oficial/40414::Samsung Galaxy S25+": {
-    "channel": "Fraguas84Oficial",
-    "post_id": "Fraguas84Oficial/40414",
-    "product": "Samsung Galaxy S25+",
-    "url": "https://t.me/Fraguas84Oficial/40414",
-    "published_at": "2026-10-17T15:07:33+00:00",
-    "notified_at": "2026-10-17T16:22:46.078098+00:00"
-  },
-  "pelandobr/97890::Samsung Galaxy S25+": {
-    "channel": "pelandobr",
-    "post_id": "pelandobr/97890",
-    "product": "Samsung Galaxy S25+",
-    "url": "https://t.me/pelandobr/97890",
-    "published_at": "2026-10-17T15:12:04+00:00",
-    "notified_at": "2026-10-17T16:22:47.327920+00:00"
-  },
   "Fraguas84Oficial/40484::Samsung Galaxy A57": {
     "channel": "Fraguas84Oficial",
     "post_id": "Fraguas84Oficial/40484",
@@ -614,5 +590,13 @@
     "url": "https://t.me/Fraguas84Oficial/46871",
     "published_at": "2026-11-15T16:49:53+00:00",
     "notified_at": "2026-11-15T19:57:04.290677+00:00"
+  },
+  "ctofertascelulares/32483::Samsung Galaxy A57": {
+    "channel": "ctofertascelulares",
+    "post_id": "ctofertascelulares/32483",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/ctofertascelulares/32483",
+    "published_at": "2026-11-16T12:09:10+00:00",
+    "notified_at": "2026-11-16T20:58:46.723034+00:00"
   }
 }
