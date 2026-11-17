@@ -1,12 +1,4 @@
 {
-  "Fraguas84Oficial/40575::Samsung Galaxy A57": {
-    "channel": "Fraguas84Oficial",
-    "post_id": "Fraguas84Oficial/40575",
-    "product": "Samsung Galaxy A57",
-    "url": "https://t.me/Fraguas84Oficial/40575",
-    "published_at": "2026-10-18T14:25:25+00:00",
-    "notified_at": "2026-10-18T16:38:45.094861+00:00"
-  },
   "escolhasegura/24179::MacBook": {
     "channel": "escolhasegura",
     "post_id": "escolhasegura/24179",
@@ -598,5 +590,13 @@
     "url": "https://t.me/Fraguas84Oficial/47249",
     "published_at": "2026-11-17T12:04:04+00:00",
     "notified_at": "2026-11-17T12:12:10.832808+00:00"
+  },
+  "pelandobr/101843::Samsung Galaxy S25": {
+    "channel": "pelandobr",
+    "post_id": "pelandobr/101843",
+    "product": "Samsung Galaxy S25",
+    "url": "https://t.me/pelandobr/101843",
+    "published_at": "2026-11-17T19:06:34+00:00",
+    "notified_at": "2026-11-17T20:52:25.776307+00:00"
   }
 }
