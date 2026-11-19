@@ -1,12 +1,4 @@
 {
-  "escolhasegura/24227::Samsung Galaxy S25": {
-    "channel": "escolhasegura",
-    "post_id": "escolhasegura/24227",
-    "product": "Samsung Galaxy S25",
-    "url": "https://t.me/escolhasegura/24227",
-    "published_at": "2026-10-20T18:25:01+00:00",
-    "notified_at": "2026-10-20T20:16:23.037802+00:00"
-  },
   "cupons_desconto/83941::Samsung Galaxy A57": {
     "channel": "cupons_desconto",
     "post_id": "cupons_desconto/83941",
@@ -582,5 +574,13 @@
     "url": "https://t.me/Fraguas84Oficial/47767",
     "published_at": "2026-11-19T15:28:54+00:00",
     "notified_at": "2026-11-19T17:39:41.097268+00:00"
+  },
+  "escolhasegura/25482::MacBook": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/25482",
+    "product": "MacBook",
+    "url": "https://t.me/escolhasegura/25482",
+    "published_at": "2026-11-19T18:54:01+00:00",
+    "notified_at": "2026-11-19T23:48:06.706148+00:00"
   }
 }
