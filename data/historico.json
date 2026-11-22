@@ -1,20 +1,4 @@
 {
-  "pelandobr/98431::Samsung Galaxy S25 FE": {
-    "channel": "pelandobr",
-    "post_id": "pelandobr/98431",
-    "product": "Samsung Galaxy S25 FE",
-    "url": "https://t.me/pelandobr/98431",
-    "published_at": "2026-10-23T17:48:05+00:00",
-    "notified_at": "2026-10-23T18:32:46.023573+00:00"
-  },
-  "escolhasegura/24394::MacBook": {
-    "channel": "escolhasegura",
-    "post_id": "escolhasegura/24394",
-    "product": "MacBook",
-    "url": "https://t.me/escolhasegura/24394",
-    "published_at": "2026-10-23T19:34:01+00:00",
-    "notified_at": "2026-10-23T21:39:41.672186+00:00"
-  },
   "BenchPromos/27510::MacBook": {
     "channel": "BenchPromos",
     "post_id": "BenchPromos/27510",
@@ -558,5 +542,13 @@
     "url": "https://t.me/pelandobr/102471",
     "published_at": "2026-11-22T00:06:06+00:00",
     "notified_at": "2026-11-22T02:25:24.854738+00:00"
+  },
+  "pelandobr/102590::Samsung Galaxy A57": {
+    "channel": "pelandobr",
+    "post_id": "pelandobr/102590",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/pelandobr/102590",
+    "published_at": "2026-11-22T22:24:07+00:00",
+    "notified_at": "2026-11-22T22:46:25.883343+00:00"
   }
 }
