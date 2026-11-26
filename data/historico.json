@@ -694,5 +694,37 @@
     "url": "https://t.me/ctofertascelulares/32566",
     "published_at": "2026-11-26T11:09:09+00:00",
     "notified_at": "2026-11-26T14:26:09.487667+00:00"
+  },
+  "escolhasegura/25824::Samsung Galaxy S25": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/25824",
+    "product": "Samsung Galaxy S25",
+    "url": "https://t.me/escolhasegura/25824",
+    "published_at": "2026-11-26T21:23:00+00:00",
+    "notified_at": "2026-11-26T23:08:54.771246+00:00"
+  },
+  "escolhasegura/25831::Samsung Galaxy A57": {
+    "channel": "escolhasegura",
+    "post_id": "escolhasegura/25831",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/escolhasegura/25831",
+    "published_at": "2026-11-26T22:19:07+00:00",
+    "notified_at": "2026-11-26T23:08:55.223084+00:00"
+  },
+  "ctofertascelulares/32580::Samsung Galaxy A57": {
+    "channel": "ctofertascelulares",
+    "post_id": "ctofertascelulares/32580",
+    "product": "Samsung Galaxy A57",
+    "url": "https://t.me/ctofertascelulares/32580",
+    "published_at": "2026-11-26T14:45:21+00:00",
+    "notified_at": "2026-11-26T23:08:56.124451+00:00"
+  },
+  "ctofertascelulares/32592::Samsung Galaxy S25": {
+    "channel": "ctofertascelulares",
+    "post_id": "ctofertascelulares/32592",
+    "product": "Samsung Galaxy S25",
+    "url": "https://t.me/ctofertascelulares/32592",
+    "published_at": "2026-11-26T22:33:10+00:00",
+    "notified_at": "2026-11-26T23:08:56.591244+00:00"
   }
 }
