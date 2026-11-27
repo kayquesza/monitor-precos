@@ -1,12 +1,4 @@
 {
-  "cupons_desconto/84099::Samsung Galaxy S25": {
-    "channel": "cupons_desconto",
-    "post_id": "cupons_desconto/84099",
-    "product": "Samsung Galaxy S25",
-    "url": "https://t.me/cupons_desconto/84099",
-    "published_at": "2026-10-28T00:40:17+00:00",
-    "notified_at": "2026-10-28T01:41:55.997184+00:00"
-  },
   "ctofertascelulares/32340::Samsung Galaxy A57": {
     "channel": "ctofertascelulares",
     "post_id": "ctofertascelulares/32340",
@@ -726,5 +718,13 @@
     "url": "https://t.me/ctofertascelulares/32592",
     "published_at": "2026-11-26T22:33:10+00:00",
     "notified_at": "2026-11-26T23:08:56.591244+00:00"
+  },
+  "ctofertascelulares/32604::Samsung Galaxy S25": {
+    "channel": "ctofertascelulares",
+    "post_id": "ctofertascelulares/32604",
+    "product": "Samsung Galaxy S25",
+    "url": "https://t.me/ctofertascelulares/32604",
+    "published_at": "2026-11-27T02:57:14+00:00",
+    "notified_at": "2026-11-27T04:58:36.051548+00:00"
   }
 }
